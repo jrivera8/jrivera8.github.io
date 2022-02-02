@@ -14,9 +14,21 @@ tags:
   - linux
 ---
 
-![](/assets/images/personalizar-terminal/logo.png)
+## Instalamos WSL 2
 
-Antes de comenzar debemos tener instalado `curl` y `git`.
+Windows Subsystem for Linux (WSL 2) lo instalamos en nuestro Windows de la siguiente manera:
+
+```sh
+wsl --install
+```
+
+![](/assets/images/personalizar-terminal/16.png)
+
+Una vez que reiniciamos nuestro Windows la distribución que se instala por defecto es la de Ubuntu 20.04.
+
+![](/assets/images/personalizar-terminal/17.png)
+
+Antes de comenzar a personalizar nuestra terminal debemos tener instalado `curl` y `git`.
 
     sudo apt install curl
     sudo apt install git
