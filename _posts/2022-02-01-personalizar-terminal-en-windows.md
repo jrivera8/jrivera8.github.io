@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Personalizar la terminal en Windows
-excerpt: "Mis apuntes para personalizar la terminal en Windows 11"
+excerpt: "Mis apuntes para personalizar la terminal en Windows 10 y 11"
 date: 2022-02-01
 classes: wide
 header:
