@@ -11,7 +11,7 @@ categories:
   - linux
 tags:  
   - wsl
-  -linux
+  - linux
 ---
 
 ![](/assets/images/personalizar-terminal/logo.png)
