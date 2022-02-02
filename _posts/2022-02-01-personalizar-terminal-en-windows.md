@@ -7,13 +7,11 @@ classes: wide
 header:
   teaser: /assets/images/personalizar-terminal/logo.png
   teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
 categories:
   - linux
 tags:  
   - wsl
   -linux
-  -terminal
 ---
 
 Antes de comenzar debemos tener instalado `curl` y `git`.
@@ -41,7 +39,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ## Instalamos los siguientes plugins
 
-#### 1. zsh-autosuggtions
+#### 1. zsh-autosuggestions
 
 Clonamos el siguiente repositorio:
 
