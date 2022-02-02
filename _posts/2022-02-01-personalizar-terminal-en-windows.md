@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Personalizar terminal en Windows
+title: Personalizar la terminal en Windows
 excerpt: "Mis apuntes para personalizar la terminal en Windows 11"
 date: 2022-02-01
 classes: wide
@@ -18,8 +18,8 @@ tags:
 
 Antes de comenzar debemos tener instalado `curl` y `git`.
 
-    1. sudo apt install curl
-    2. sudo apt install git
+    sudo apt install curl
+    sudo apt install git
 
 ## Instalamos zsh
 
@@ -29,7 +29,7 @@ sudo apt install zsh
 
 ![](/assets/images/personalizar-terminal/1.png)
 
-## Instalamos Oh My Zsh!
+## Instalamos [Oh My Zsh!](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 
 Copiamos la siguiente línea en nuestra terminal:
 
