@@ -14,6 +14,8 @@ tags:
   -linux
 ---
 
+![](/assets/images/personalizar-terminal/logo.png)
+
 Antes de comenzar debemos tener instalado `curl` y `git`.
 
     1. sudo apt install curl
