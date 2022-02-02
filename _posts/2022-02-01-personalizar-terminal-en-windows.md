@@ -29,7 +29,7 @@ sudo apt install zsh
 
 ![](/assets/images/personalizar-terminal/1.png)
 
-## Instalamos [Oh My Zsh!](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+## Instalamos [Oh My Zsh!](https://ohmyz.sh/#install)
 
 Copiamos la siguiente línea en nuestra terminal:
 
@@ -41,7 +41,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ## Instalamos los siguientes plugins
 
-#### 1. zsh-autosuggestions
+#### 1. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 
 Clonamos el siguiente repositorio:
 
@@ -51,7 +51,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ![](/assets/images/personalizar-terminal/3.png)
 
-#### 2. zsh-syntax-highlighting
+#### 2. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 
 Clonamos el siguiente repositorio:
 
@@ -61,7 +61,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ![](/assets/images/personalizar-terminal/4.png)
 
-## Instalamos el tema PowerLevel10k
+## Instalamos el tema [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 
 Clonamos el siguiente repositorio:
 
@@ -89,7 +89,7 @@ Finalmente guardamos el archivo con `Crtl+o`, `Enter` y `Crtl+x` para salir.
 
 ## Instalamos la fuente
 
-Descargamos el siguiente archivo `ttf`.
+Descargamos el siguiente archivo [ttf](https://github.com/romkatv/powerlevel10k#manual-font-installation).
 
 ![](/assets/images/personalizar-terminal/8.png)
 
