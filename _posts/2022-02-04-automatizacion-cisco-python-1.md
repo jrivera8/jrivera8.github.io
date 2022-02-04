@@ -5,7 +5,7 @@ excerpt: "Aumatización de redes con python."
 date: 2022-02-04
 classes: wide
 header:
-  teaser: /assets/images/automatizacion-cisco-python-1/logo.png
+  teaser: /assets/images/automatizacion-cisco-python-1/logo.jpg
   teaser_home_page: true
 categories:
   - cisco
