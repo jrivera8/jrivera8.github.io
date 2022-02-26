@@ -22,9 +22,9 @@ tags:
 #### 1. Crearemos las siguientes VLANS:
             
 ```go
--VLAN10: TAC
--VLAN20: SERVERS
--VLAN199: MANAGEMENT
+-VLAN10: TAC (192.168.10.0/24)
+-VLAN20: SERVERS (192.168.20.0/24)
+-VLAN199: MANAGEMENT (192.168.199.0/24)
 ```
 
 ```go
