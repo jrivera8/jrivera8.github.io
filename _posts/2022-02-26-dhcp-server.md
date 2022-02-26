@@ -14,6 +14,10 @@ tags:
   - cisco
 ---
 
+## Escenario en GNS3
+
+![](/assets/images/vlans-intervlans-switchmultilayer/Captura de pantalla 2022-02-26 113722.png)
+
 ## Instalamos Appliance Toollkit
 
 Ingresamos a [GNS3-Marketplace](https://gns3.com/marketplace/appliances/networkers-toolkit) lo descargamos e instalamos en nuestro GNS3.
