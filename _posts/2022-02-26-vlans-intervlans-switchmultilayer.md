@@ -19,7 +19,7 @@ tags:
 
 ## Creación de VLANS
 
-#### 1. Crearemos las siguientes VLANS:
+### 1. Crearemos las siguientes VLANS:
             
 ```go
 -VLAN10: TAC (192.168.10.0/24)
@@ -138,23 +138,23 @@ L        192.168.199.1/32 is directly connected, Vlan199
 
 ## Verificamos que haya comunicacion inter-VLANS
 
-#### 1. Hacemos ping de la PC-TAC hacia el servidor DHCP y viceversa
+### 1. Hacemos ping de la PC-TAC hacia el servidor DHCP y viceversa
 
-#### PC-TAC
+### PC-TAC
 
 ```go
 root@TAC:~# hostname -I
 192.168.10.11 
 ```
 
-#### DHCP-SERVER
+### DHCP-SERVER
 
 ```go
 root@DHCP:~# hostname -I
 192.168.20.100
 ```
 
-#### TAC --> DHCP
+### TAC --> DHCP
 
 ```go
 root@TAC:~# ping -c 1 192.168.20.100
@@ -166,7 +166,7 @@ PING 192.168.20.100 (192.168.20.100) 56(84) bytes of data.
 rtt min/avg/max/mdev = 5.096/5.096/5.096/0.000 ms
 ```
 
-#### DHCP --> TAC
+### DHCP --> TAC
 
 ```go
 root@DHCP:~# ping -c 1 192.168.10.11 

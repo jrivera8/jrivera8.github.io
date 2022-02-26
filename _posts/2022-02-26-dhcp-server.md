@@ -57,7 +57,7 @@ rtt min/avg/max/mdev = 11.169/11.169/11.169/0.000 ms
 
 ## Configuramos nuestro servidor DHCP
 
-#### 1. Vamos a la siguiente ruta y hacemos un backup al archivo `dhcpd.conf`
+### 1. Vamos a la siguiente ruta y hacemos un backup al archivo `dhcpd.conf`
 
 ```go
 root@DHCP:~# cd /etc/dhcp/
@@ -77,14 +77,14 @@ drwxr-x--- 2 root dhcpd 4096 Apr  8  2021 ddns-keys
 -rw-r--r-- 1 root root  3331 Mar  9  2021 dhcpd6.conf
 ```
 
-#### 2. Ahora creamos nuestro archivo `dhcpd.conf` y lo personalizamos
+### 2. Ahora creamos nuestro archivo `dhcpd.conf` y lo personalizamos
 
 ```go
 root@DHCP:/etc/dhcp# touch dhcpd.conf 
 root@DHCP:/etc/dhcp# nano dhcpd.conf
 ```
 
-Copiamos lo siguiente en el archivo `dhcpd.conf` y lo guardamos:
+### Copiamos lo siguiente en el archivo `dhcpd.conf` y lo guardamos:
 
 ```go
 default-lease-time 600;
