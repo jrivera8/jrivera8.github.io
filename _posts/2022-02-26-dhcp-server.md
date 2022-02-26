@@ -57,7 +57,7 @@ rtt min/avg/max/mdev = 11.169/11.169/11.169/0.000 ms
 
 ## Configuramos nuestro servidor DHCP
 
-1.  Vamos a la siguiente ruta y hacemos un backup al archivo `dhcpd.conf`
+#### 1. Vamos a la siguiente ruta y hacemos un backup al archivo `dhcpd.conf`
 
 ```go
 root@DHCP:~# cd /etc/dhcp/
@@ -77,7 +77,7 @@ drwxr-x--- 2 root dhcpd 4096 Apr  8  2021 ddns-keys
 -rw-r--r-- 1 root root  3331 Mar  9  2021 dhcpd6.conf
 ```
 
-2. Ahora creamos nuestro archivo `dhcpd.conf` y lo personalizamos
+#### 2. Ahora creamos nuestro archivo `dhcpd.conf` y lo personalizamos
 
 ```go
 root@DHCP:/etc/dhcp# touch dhcpd.conf 
@@ -115,7 +115,7 @@ subnet 192.168.20.0 netmask 255.255.255.0 {
 }
 ```
 
-3. Ahora modificamos el archivo `isc-dhcp-server` que está en la siguiente ruta y asignamos la interfaz por donde comenzara a responder las solicitudes de DHCP, en nuestro caso la interfaz en la `eth0`
+#### 3. Ahora modificamos el archivo `isc-dhcp-server` que está en la siguiente ruta y asignamos la interfaz por donde comenzara a responder las solicitudes de DHCP, en nuestro caso la interfaz en la `eth0`
 
 ```go
 root@DHCP:/etc/dhcp# nano /etc/default/isc-dhcp-server
@@ -169,7 +169,7 @@ L3SW1(config-if)#exit
 
 ## Validamos que nuestro servidor DHCP este funcionando
 
-1. En la PC-TAC ingresamos a la ruta /etc/network/interfaces y descomentamos las dos ultimas líneas para configuración por DHCP
+#### 1. En la PC-TAC ingresamos a la ruta /etc/network/interfaces y descomentamos las dos ultimas líneas para configuración por DHCP
 
 ```go
 root@DHCP:~# nano /etc/network/interfaces
@@ -194,7 +194,7 @@ root@DHCP:~# nano /etc/network/interfaces
  iface eth0 inet dhc
 ```
 
-2. Apagamos y encendemos la PC-TAC
+#### 2. Apagamos y encendemos la PC-TAC
 
 ```go
 root@TAC:~# ifconfig
@@ -216,7 +216,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-3. Visualizamos los mensajes DHCP intercambiamos entre el cliente y servidor
+#### 3. Visualizamos los mensajes DHCP intercambiamos entre el cliente y servidor
 
 ```go
 root@DHCP:/var/log# tail syslog 

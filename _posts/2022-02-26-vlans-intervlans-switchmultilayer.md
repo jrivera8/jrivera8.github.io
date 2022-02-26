@@ -19,11 +19,13 @@ tags:
 
 ## Creación de VLANS
 
-Crearemos las siguientes VLANS:
+#### 1. Crearemos las siguientes VLANS:
             
-            *VLAN10: TAC
-            *VLAN20: SERVERS
-            *VLAN199: MANAGEMENT
+```go
+-VLAN10: TAC
+-VLAN20: SERVERS
+-VLAN199: MANAGEMENT
+```
 
 ```go
 L3SW1(config)#vlan 10
@@ -136,25 +138,25 @@ L        192.168.199.1/32 is directly connected, Vlan199
 
 ## Verificamos que haya comunicacion inter-VLANS
 
-Hacemos ping de la PC-TAC hacia el servidor DHCP y viceversa
+#### 1. Hacemos ping de la PC-TAC hacia el servidor DHCP y viceversa
 
-PC-TAC
+#### PC-TAC
 
 ```go
 root@TAC:~# hostname -I
 192.168.10.11 
 ```
 
-DHCP-SERVER
+#### DHCP-SERVER
 
 ```go
 root@DHCP:~# hostname -I
 192.168.20.100
 ```
 
-TAC --> DHCP
+#### TAC --> DHCP
 
-```go`
+```go
 root@TAC:~# ping -c 1 192.168.20.100
 PING 192.168.20.100 (192.168.20.100) 56(84) bytes of data.
 64 bytes from 192.168.20.100: icmp_seq=1 ttl=63 time=5.10 ms
@@ -164,7 +166,7 @@ PING 192.168.20.100 (192.168.20.100) 56(84) bytes of data.
 rtt min/avg/max/mdev = 5.096/5.096/5.096/0.000 ms
 ```
 
-DHCP --> TAC
+#### DHCP --> TAC
 
 ```go
 root@DHCP:~# ping -c 1 192.168.10.11 
