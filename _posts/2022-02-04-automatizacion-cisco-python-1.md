@@ -175,4 +175,4 @@ C        192.168.1.0/24 is directly connected, GigabitEthernet0/0
 L        192.168.1.30/32 is directly connected, GigabitEthernet0/0
 ```
 
-**Gracias**
+**Servido**

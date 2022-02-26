@@ -135,4 +135,4 @@ Finalmente seguimos la siguiente secuencia `yyyy11112143121y1y` para obtener nue
 
 ![](/assets/images/personalizar-terminal/15.png)
 
-**Gracias**
+**Servido**
