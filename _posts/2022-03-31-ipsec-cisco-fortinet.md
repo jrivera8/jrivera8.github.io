@@ -15,7 +15,7 @@ tags:
   - fortinet
 ---
 ## TOPOLOGIA
-![](assets/images/ipsec-cisco-fortinet/11.png)
+![](/assets/images/ipsec-cisco-fortinet/11.png)
 ## CONFIGURACION BASICA
 ## INTERNET
 ```go
