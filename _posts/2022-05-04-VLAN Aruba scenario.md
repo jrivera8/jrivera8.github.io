@@ -197,6 +197,7 @@ Total Route Count : 10
 ```
 ## Pruebas de conectividad
 #### PC-1 a su gateway
+```go
 root@PC-1:~# ping 192.168.25.1 -c 1
 PING 192.168.25.1 (192.168.25.1) 56(84) bytes of data.
 64 bytes from 192.168.25.1: icmp_seq=1 ttl=64 time=9.12 ms
@@ -204,9 +205,11 @@ PING 192.168.25.1 (192.168.25.1) 56(84) bytes of data.
 --- 192.168.25.1 ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 9.121/9.121/9.121/0.000 ms
+```
 > Se aprecia en la captura wireshark que el paquete sale sin etiqueta debido a que es la vlan nativa.
 ![](/assets/images/Aruba-vlans/2.png)
 #### PC-1 a PC-2
+```go
 root@PC-1:~# ping 192.168.4.10 -c 1
 PING 192.168.4.10 (192.168.4.10) 56(84) bytes of data.
 64 bytes from 192.168.4.10: icmp_seq=1 ttl=63 time=16.6 ms
@@ -214,6 +217,7 @@ PING 192.168.4.10 (192.168.4.10) 56(84) bytes of data.
 --- 192.168.4.10 ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 16.662/16.662/16.662/0.000 ms
+```
 > Se aprecia en la captura wireshark que el paquete "echo request" sale sin etiqueta debido a que es la vlan nativa.
 ![](/assets/images/Aruba-vlans/3.png)
 > Al llegar al gateway se enruta hacia la vlan 4 por lo tanto al paquete "echo request" se le agrega una etiqueta con ID: 4.
@@ -222,6 +226,7 @@ rtt min/avg/max/mdev = 16.662/16.662/16.662/0.000 ms
 > Al llegar al gateway se enruta hacia la vlan 25 y no se agrega una etiqueta debido a que es la vlan nativa.
 ![](/assets/images/Aruba-vlans/5.png)
 #### PC-2 a PC-4
+```go
 root@PC-2:~# ping 192.168.17.10 -c 1
 PING 192.168.17.10 (192.168.17.10) 56(84) bytes of data.
 64 bytes from 192.168.17.10: icmp_seq=1 ttl=63 time=18.8 ms
@@ -229,6 +234,7 @@ PING 192.168.17.10 (192.168.17.10) 56(84) bytes of data.
 --- 192.168.17.10 ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 18.896/18.896/18.896/0.000 ms
+```
 > El paquete "echo request" sale con una etiqueta ID: 4 hacia el gateway para luego ser enrutado hacia la vlan 17
 ![](/assets/images/Aruba-vlans/6.png)
 > El paquete "echo request" al llegar al gateway es enrutado hacia la vlan 17 con una etiqueta ID: 17
@@ -237,6 +243,7 @@ rtt min/avg/max/mdev = 18.896/18.896/18.896/0.000 ms
 > El paquete "echo reply" al llegar al gateway es enrutado hacia la vlan 4 con una etiqueta ID: 4
 ![](/assets/images/Aruba-vlans/7.png)
 #### PC-3 hacia el gateway
+```go
 root@PC-3:~# ping 192.168.6.1 -c 1
 PING 192.168.6.1 (192.168.6.1) 56(84) bytes of data.
 64 bytes from 192.168.6.1: icmp_seq=1 ttl=64 time=26.5 ms
@@ -244,6 +251,7 @@ PING 192.168.6.1 (192.168.6.1) 56(84) bytes of data.
 --- 192.168.6.1 ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 26.551/26.551/26.551/0.000 ms
+```
 > El paquete "echo request" es enviado al gateway con un etiqueta ID: 6 debio a que la vlan nativa se configuro con tag.
 > El paquete "echo reply" respuesta del gateway hacia la pc de la vlan 6 con un etiqueta ID: 6
 ![](/assets/images/Aruba-vlans/9.png)
