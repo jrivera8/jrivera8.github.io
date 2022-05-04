@@ -208,6 +208,7 @@ rtt min/avg/max/mdev = 9.121/9.121/9.121/0.000 ms
 ```
 > Se aprecia en la captura wireshark que el paquete sale sin etiqueta debido a que es la vlan nativa.
 ![](/assets/images/Aruba-vlans/2.png)
+
 #### PC-1 a PC-2
 ```go
 root@PC-1:~# ping 192.168.4.10 -c 1
@@ -225,6 +226,7 @@ rtt min/avg/max/mdev = 16.662/16.662/16.662/0.000 ms
 ![](/assets/images/Aruba-vlans/4.png)
 > Al llegar al gateway se enruta hacia la vlan 25 y no se agrega una etiqueta debido a que es la vlan nativa.
 ![](/assets/images/Aruba-vlans/5.png)
+
 #### PC-2 a PC-4
 ```go
 root@PC-2:~# ping 192.168.17.10 -c 1
@@ -242,6 +244,7 @@ rtt min/avg/max/mdev = 18.896/18.896/18.896/0.000 ms
 ![](/assets/images/Aruba-vlans/8.png)
 > El paquete "echo reply" al llegar al gateway es enrutado hacia la vlan 4 con una etiqueta ID: 4
 ![](/assets/images/Aruba-vlans/7.png)
+
 #### PC-3 hacia el gateway
 ```go
 root@PC-3:~# ping 192.168.6.1 -c 1
