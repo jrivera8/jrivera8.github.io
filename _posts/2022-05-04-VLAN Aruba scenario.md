@@ -240,6 +240,7 @@ rtt min/avg/max/mdev = 18.896/18.896/18.896/0.000 ms
 > El paquete "echo request" sale con una etiqueta ID: 4 hacia el gateway para luego ser enrutado hacia la vlan 17
 ![](/assets/images/Aruba-vlans/6.png)
 > El paquete "echo request" al llegar al gateway es enrutado hacia la vlan 17 con una etiqueta ID: 17
+
 > La respuesta de la PC-4 es un "echo reply" que se lo envia al gateway con una etiqueta ID: 17 para que lo enrute hacia la vlan 4.
 ![](/assets/images/Aruba-vlans/8.png)
 > El paquete "echo reply" al llegar al gateway es enrutado hacia la vlan 4 con una etiqueta ID: 4
@@ -256,5 +257,6 @@ PING 192.168.6.1 (192.168.6.1) 56(84) bytes of data.
 rtt min/avg/max/mdev = 26.551/26.551/26.551/0.000 ms
 ```
 > El paquete "echo request" es enviado al gateway con un etiqueta ID: 6 debio a que la vlan nativa se configuro con tag.
+
 > El paquete "echo reply" respuesta del gateway hacia la pc de la vlan 6 con un etiqueta ID: 6
 ![](/assets/images/Aruba-vlans/9.png)
